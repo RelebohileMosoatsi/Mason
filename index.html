@@ -14,25 +14,104 @@
         <p style="font-size: 18px; margin: 10px 0;">A Journey of Flavor, Tradition, and Innovation</p>
         <a href="#contact" style="background-color: #fff; color: #ff6347; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Get Started</a>
     </header>
+<!-- Navigation Menu -->
+<nav style="background-color: #333; padding: 10px 0; text-align: center;">
+    <ul style="list-style: none; padding: 0; margin: 0;">
+        <li style="display: inline; margin-right: 20px;">
+            <a href="about.html" class="nav-link" style="color: white; text-decoration: none; transition: all 0.3s ease;">About Us</a>
+        </li>
+        <li style="display: inline; margin-right: 20px;">
+            <a href="services.html" class="nav-link" style="color: white; text-decoration: none; transition: all 0.3s ease;">Services</a>
+        </li>
+        <li style="display: inline; margin-right: 20px;">
+            <a href="portfolio.html" class="nav-link" style="color: white; text-decoration: none; transition: all 0.3s ease;">Portfolio</a>
+        </li>
+        <li style="display: inline; margin-right: 20px;">
+            <a href="blog.html" class="nav-link" style="color: white; text-decoration: none; transition: all 0.3s ease;">Blog</a>
+        </li>
+        <li style="display: inline;">
+            <a href="contact.html" class="nav-link" style="color: white; text-decoration: none; transition: all 0.3s ease;">Contact</a>
+        </li>
+    </ul>
+</nav>
 
-    <!-- Navigation Menu -->
-    <nav style="background-color: #333; padding: 10px 0; text-align: center;">
-        <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="display: inline; margin-right: 20px;"><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
-            <li style="display: inline; margin-right: 20px;"><a href="services.html" style="color: white; text-decoration: none;">Services</a></li>
-            <li style="display: inline; margin-right: 20px;"><a href="portfolio.html" style="color: white; text-decoration: none;">Portfolio</a></li>
-            <li style="display: inline; margin-right: 20px;"><a href="blog.html" style="color: white; text-decoration: none;">Blog</a></li>
-            <li style="display: inline;"><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Inline CSS for hover effects, animations, and bouncing -->
+<style>
+    /* Hover effect */
+    nav a:hover {
+        color: #FFD700; /* Gold color */
+        background-color: #555; /* Darker background */
+        padding: 5px 10px; /* Add some padding to make the hover effect stand out */
+        border-radius: 5px; /* Rounded corners for the background */
+    }
 
+    /* Bounce animation for nav links */
+    .nav-link {
+        opacity: 0;
+        animation: fadeIn 1s forwards, bounce 1s ease-out; /* Applying both fade-in and bounce */
+    }
+
+    /* Sequential delay for each link */
+    .nav-link:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    .nav-link:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    .nav-link:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    .nav-link:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+
+    .nav-link:nth-child(5) {
+        animation-delay: 1s;
+    }
+
+    /* Keyframes for fadeIn effect */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px); /* Start position slightly below */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* End position */
+        }
+    }
+
+    /* Keyframes for bounce effect */
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        30% {
+            transform: translateY(-10px); /* Move up a bit */
+        }
+        50% {
+            transform: translateY(0); /* Return to original position */
+        }
+        70% {
+            transform: translateY(-5px); /* Slight second bounce */
+        }
+        100% {
+            transform: translateY(0); /* End at the original position */
+        }
+    }
+</style>
+
+   
     <!-- About Section with Images and Description -->
     <section id="about" style="padding: 40px 20px; background-color: #f4f4f4;">
         <h2 style="text-align: center; color: #333;">About Tasty Tales</h2>
         <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around;">
             <!-- Image Container -->
             <div style="flex: 1 1 45%; margin: 10px; text-align: center;">
-                <img src="restaurant-image.jpg" alt="Tasty Tales Restaurant" style="width: 100%; height: auto; border-radius: 8px;">
+                <img src="pexels-farhad-8697542.jpg" alt="Tasty Tales Restaurant" style="width: 100%; height:400px; border-radius: 8px;">
             </div>
             <div style="flex: 1 1 45%; margin: 10px; color: #333;">
                 <p style="font-size: 18px; line-height: 1.6;">
